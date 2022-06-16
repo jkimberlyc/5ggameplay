@@ -1,0 +1,52 @@
+WORK DISTRIBUTION:
+Antonette 	- Mobile games page
+Wayne 		- PC games page
+Ben 		- Console games page
+Jeselle		- Profile & Login
+
+WHAT TO PUT IN EACH PAGE:
+3 games per genre: Action, Adventure, Strategy
+
+Game details content:
+	Title CALL OF DUTY: WARZON
+	Developer: Activision
+	Year: March 10 2020
+	Description
+
+	a free-to-play battle royale video game released on March 10, 2020, for PlayStation 4, Xbox One, and Microsoft Windows. 
+        A version for the PlayStation 5 and Xbox Series X/S has been announced to be released in 2022, with a mobile version also in development as of 2022.[1][2] 
+       The game is a part of 2019's Call of Duty: Modern Warfare and is connected to 2020's Call of Duty: Black Ops: Cold War and 2021's Call of Duty: Vanguard, but does not require purchase of any of the aforementioned titles, and was introduced during Season 2 of Modern Warfare content. Warzone was developed by Infinity Ward and Raven Software (the latter later credited as the sole developer following the integration of Cold War's content) and published by Activision.[3] Warzone allows online multiplayer combat among 150 players, although some limited-time game modes support 200 players. Other modes include Plunder, Rebirth: Resurgence, Buy Back, Payload and Clash. The game features both cross-platform play and cross-platform progression between three games.
+       The game features two main modes: Battle Royale and Plunder. Warzone introduces a new in-game currency system that can be used at "Buy Stations" in and around the map. "Loadout" drops are an example of where Cash can be traded for limited access to players' custom classes (which were shared with Modern Warfare's standard modes prior to Season 6, v1.29, but now are unique to Warzone). Players may also use Cash to purchase items such as "killstreaks" and gas masks. Cash can be found by looting buildings and killing players that have cash on them. At launch, Warzone only offered Trios, a squad capacity of three players. However, in free post-launch content updates, Solos, Duos and Quads have all been added to the game.[4][5]
+       The game received generally positive reviews from critics, with the maps receiving specific praise. In April 2021, Activision announced that Warzone had surpassed 100 million active players.[6]
+	
+	2 photos (thumbnail and cover photo)
+
+
+	Title: Ghost of Tsushima
+	Developer Sucker Punch Production
+	Year: August 21, 2021
+	Description:
+	
+	Ghost of Tsushima is an action-adventure game played from a third-person perspective. The game features a large open world, with no visible waypoints on the HUD, 
+	which can be explored with or without guidance by wind direction.[1] Players can travel to different parts of the island on horseback. An item that acts as a grappling hook is available to access difficult to reach areas.[2] The game features side quests and non-playable characters with which the player can interact.[3]
+	Players can engage in a direct confrontation with enemies, called a stand off, using their katana, which can chain up a series of fatal strikes against a set number of enemies.[4] Additionally, the player has access to bows, which can fire different types of arrows. Alternatively, using stealth allows the player to evade enemies and strike them silently, to use tools such as firecrackers and wind chime bells to create distractions, as well as use smoke bombs to disorient alerted foes and kunai for striking multiple enemies.[5]
+	Players can unlock various sets of armor, clothing and charms. Each set has different properties that provide benefits in combat. Some armor reduces damage taken, while another increases total health or melee damage. Most sets of armor and clothing can be upgraded, by collecting materials in the area or by completing quests. Only body armor and clothing have these perks, while headwear and face wear are for visual appeal. Charms are items, acquired through exploration and giving different effects to general gameplay, such as decreasing damage taken, reducing enemy detection speed, or increasing how much health is recovered from healing.[6]
+	The game's highest difficulty is a more realistic mode in which the player and enemies do massive damage to each other, with all non-boss fights ending in one or two successful cuts.[7]
+	A multiplayer mode titled Legends was released in late 2020. Players can complete story missions based on Japanese folklore with another player.[8] A horde mode, in which players fight waves of enemies, is also available for a group of four players. A raid was added post-Legends launch.[9][10]
+
+
+	2 photos (thumbnail and cover photo)
+
+
+	Title: Civilization VI
+	Developer: Firaxis Games
+	Year: October 21, 2016
+	Description
+
+	is a turn-based strategy 4X video game developed by Firaxis Games, published by 2K Games, and distributed by Take-Two Interactive. 
+	The Mobile port was published by Aspyr Media. The latest entry into the Civilization series, it was released on Microsoft Windows and macOS in October 2016, with later ports for Linux in February 2017, iOS in December 2017, Nintendo Switch in November 2018, PlayStation 4 and Xbox One in November 2019 and Android in 2020.
+	Similar to previous installments, the goal for the player is to develop a civilization from an early settlement through many in-game millennia to become a world power and achieve one of several victory conditions, such as through military domination, technological superiority, or cultural influence, over the other human and computer-controlled opponents. Players do this by exploring the world, founding new cities, building city improvements, deploying military troops to attack and defend from others, researching new technologies and civics advancements, developing an influential culture, and engaging in trade and negotiations with other world leaders.
+	The game features several civilizations not featured in previous incarnations of Civilization, while many returning civilizations have new capitals or new leaders. A critical design focus was to avoid having the player follow a pre-set path of improvements towards their civilization which they had observed from earlier games. New to Civilization VI is the use of districts outside the city center to house most of the buildings. For example, a campus district must be built in order to house science-based buildings. Other new features include research on the game's technology tree based on nearby terrain, a similar technology tree for cultural improvements and a better government civics structure for those playing on a cultural victory path. There is also new artificial intelligence mechanics for computer-controlled opponents, which includes secret goals and randomized engagements to disrupt an otherwise stable game.
+	
+	2 photos (thumbnail and cover photo)
+	 
