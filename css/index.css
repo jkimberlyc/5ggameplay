@@ -46,7 +46,7 @@
   color: rgba(255, 255, 255, 0.75);
 } */
 
-header {
+header, footer {
   background: rgb(77, 2, 55);
   background: radial-gradient(
     circle,
@@ -59,4 +59,5 @@ header {
   box-shadow: 5px 0 5px -2px rgba(255, 255, 255, 0.97),
     -5px 0 5px -2px rgba(255, 255, 255, 0.97);
 } */
+
 
