@@ -69,3 +69,12 @@ footer {
   box-shadow: 5px 0 5px -2px rgba(255, 255, 255, 0.97),
     -5px 0 5px -2px rgba(255, 255, 255, 0.97);
 } */
+
+.modal-content {
+  background: rgb(56, 14, 4);
+  background: linear-gradient(
+    162deg,
+    rgba(56, 14, 4, 1) 0%,
+    rgba(6, 25, 70, 1) 100%
+  );
+}
