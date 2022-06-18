@@ -19,20 +19,21 @@
     ></script>
   </head>
   <body class="bg-navy text-white">
-    <!-- Navbar -->
-    <!--Main Navigation-->
+    <!--Main Navigation -->
     <header class="mb-1">
       <!-- Jumbotron -->
       <div class="px-3 pt-3 text-center text-white">
         <div class="container">
           <div class="row">
+            <!-- Logo -->
             <div
               class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0"
             >
-              <a href="#" class="ms-md-2">
-                <img src="images/1tp.png" height="80px" class="bg-white" />
+              <a href="index.html" class="ms-md-2">
+                <img src="images/logo.jpg" height="80px" class="bg-white" />
               </a>
             </div>
+            <!-- Search Bar -->
             <div class="col-md-4 m-auto d-none d-md-block">
               <form class="d-flex input-group w-auto m-auto mb-3 mb-md-0">
                 <input
@@ -46,11 +47,12 @@
                 ></span>
               </form>
             </div>
+            <!-- Modals -->
             <div
               class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center"
             >
-              <!-- LOGIN/SIGNUP -->
               <div class="d-flex">
+                <!-- Log In Modal -->
                 <div
                   class="modal fade"
                   id="loginModalToggle"
@@ -74,7 +76,7 @@
                       <div class="modal-body p-4">
                         <form>
                           <div class="mb-3 text-start">
-                            <label for="exampleInputEmail1" class="form-label"
+                            <label for="inputUsername" class="form-label"
                               >Username</label
                             >
                             <input
@@ -98,9 +100,9 @@
                             <input
                               type="checkbox"
                               class="form-check-input"
-                              id="exampleCheck1"
+                              id="rememberMe"
                             />
-                            <label class="form-check-label" for="exampleCheck1"
+                            <label class="form-check-label" for="rememberMe"
                               >Remember Me</label
                             >
                             <div>
@@ -135,6 +137,8 @@
                     </div>
                   </div>
                 </div>
+
+                <!--Sign Up Modal -->
                 <div
                   class="modal fade"
                   id="signUpModalToggle"
@@ -237,23 +241,24 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <!-- Log In button -->
+              <div class="nav-item">
                 <a
-                  class="text-white text-decoration-none d-none d-md-block py-2 px-3"
+                  class="nav-link d-none d-md-block py-2 px-3"
                   data-bs-toggle="modal"
                   href="#loginModalToggle"
                   role="button"
-                  style="background-color: rgba(255, 49, 49, 0.521)"
-                  >Log In</a
+                  >LOG IN</a
                 >
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Jumbotron -->
+
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <!-- Container wrapper -->
         <div class="container justify-content-center justify-content-md-center">
           <!-- Search bar -->
           <form class="d-flex input-group w-75 m-auto d-block d-md-none">
@@ -267,7 +272,6 @@
               ><i class="fas fa-search text-red"></i
             ></span>
           </form>
-          <!-- End of Search bar -->
           <button
             class="navbar-toggler mx-auto"
             type="button"
@@ -276,26 +280,24 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Left links -->
+
+          <!-- Main Links  -->
           <div
             class="collapse navbar-collapse justify-content-center"
             id="NavDropdown"
           >
             <ul class="navbar-nav align-items-center">
               <li class="nav-item me-2">
-                <a class="nav-link active" href="#">DISCOVER</a>
+                <a class="nav-link active" href="index.html">DISCOVER</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link text-red" href="html/mobile.html">MOBILE</a>
+                <a class="nav-link" href="html/mobile.html">MOBILE</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link text-red" href="html/pc.html">DESKTOP</a>
+                <a class="nav-link" href="html/pc.html">DESKTOP</a>
               </li>
-              <!-- <li class="nav-item me-2  d-none d-md-inline-block"> -->
               <li class="nav-item me-2">
-                <a class="nav-link text-red" href="html/console.html"
-                  >CONSOLE</a
-                >
+                <a class="nav-link" href="html/console.html">CONSOLE</a>
               </li>
               <li class="nav-item me-2 d-block d-md-none">
                 <a
@@ -312,16 +314,16 @@
       </nav>
     </header>
     <!-- CAROUSEL -->
-    <div class="container mb-3">
+    <div class="container">
       <div
-        id="carouselExampleDark"
-        class="carousel slide"
+        id="featuredGames"
+        class="carousel slide shadow-lg"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#featuredGames"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
@@ -329,29 +331,28 @@
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#featuredGames"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#featuredGames"
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img
-              src="https://www.gensh.in/wallpaper/genshin/genshin_31_4K.jpeg"
-              class="img-fluid w-100"
-              alt="..."
-            />
+            <a href="#"
+              ><img
+                src="https://www.gensh.in/wallpaper/genshin/genshin_31_4K.jpeg"
+                class="img-fluid w-100"
+                alt="..."
+            /></a>
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+              <h5>Genshin Impact</h5>
+              <p>Check out their latest updates and offers.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
@@ -384,7 +385,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target="#featuredGames"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -393,7 +394,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target="#featuredGames"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -402,16 +403,16 @@
       </div>
     </div>
     <!-- END OF CAROUSEL -->
-    <div class="container-lg p-3">
+    <div class="container-lg my-3">
       <div class="d-lg-flex flex-row">
         <div
-          class="p-3 justify-content-center align-items-center"
+          class="p-3 justify-content-center align-items-center shadow"
           style="background-color: rgba(49, 126, 102, 0.219)"
         >
-          <div class="display-5">Midweek Sale</div>
+          <div class="display-5 ls-3">Midweek Sale</div>
           <div class="card bg-dark text-white mb-3">
             <img
-              src="https://www.mobygames.com/images/covers/l/665186-deep-rock-galactic-deluxe-edition-windows-apps-front-cover.jpg"
+              src="https://www.mobygames.com/images/covers/l/567922-cyberpunk-2077-xbox-one-front-cover.jpg"
               class="card-img"
               alt="..."
             />
@@ -419,14 +420,26 @@
               class="card-img-overlay d-flex flex-column justify-content-end"
             >
               <h5 class="card-title">
-                <a class="text-decoration-none" href="#">Deep Rock Galactic</a>
+                <a
+                  class="text-decoration-none"
+                  href="html/console.html#cyberpunk2077"
+                  >Cyberpunk 2077</a
+                >
               </h5>
+              <div>
+                <a href="html/console.html"
+                  ><span class="badge">Console</span></a
+                >
+                <a href="html/console.html"
+                  ><span class="badge">Action</span></a
+                >
+              </div>
+
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Cyberpunk 2077 is an open-world, action-adventure RPG set in the
+                dark future of Night City — a dangerous megalopolis obsessed
+                with power, glamor, and ceaseless body modification.
               </p>
-              <p class="card-text">Last updated 3 mins ago</p>
             </div>
           </div>
           <div class="card bg-dark text-white">
@@ -446,13 +459,16 @@
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <p class="card-text">Last updated 3 mins ago</p>
+              <p class="badge bg-dark">Console</p>
             </div>
           </div>
         </div>
-        <div class="p-3 mx-auto w-100">
+        <div
+          class="p-3 w-100"
+          style="background-color: rgba(12, 57, 94, 0.829)"
+        >
           <div class="mb-3">
-            <div class="display-5">Recommended For You</div>
+            <div class="display-5 ls-3">Recommended For You</div>
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button
@@ -638,7 +654,7 @@
               </div>
             </div>
             <div class="mt-5">
-              <div class="display-5">Top Games this Month</div>
+              <div class="display-5 ls-3">Top Games this Month</div>
               <div class="card-group">
                 <div class="card bg-transparent">
                   <img

@@ -37,12 +37,28 @@
     rgba(201, 177, 124, 0) 50%,
     rgba(253, 187, 45, 0) 100%
   ); */
-  background: rgb(0, 0, 0);
+  /* background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.5525560566023284) 0%,
     rgba(150, 53, 210, 0.15199583251269255) 33%,
     rgba(218, 239, 255, 0) 51%
+  ); */
+  background: rgb(12, 15, 23);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 15, 23, 0.8463760504201681) 23%,
+    rgba(253, 187, 45, 0) 100%
   );
   transition: 1s ease;
+}
+
+.card-img-overlay {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 15, 23, 0.8463760504201681) 23%,
+    rgba(150, 53, 210, 0.15199583251269255) 33%,
+    rgba(218, 239, 255, 0) 51%
+  );
 }
