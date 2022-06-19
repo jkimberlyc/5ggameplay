@@ -58,7 +58,7 @@
   font-family: "Source Code Pro", monospace;
   color: rgb(94, 195, 253);
   /* background-color: rgba(0, 0, 0, 0.521); */
-  /* text-shadow: 1px 1px white; */
+  text-shadow: 2px 2px rgb(67, 69, 99);
   text-decoration: none;
   font-weight: bold;
 }
