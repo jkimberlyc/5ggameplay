@@ -58,7 +58,7 @@
   /* font-family: "Source Code Pro", monospace; */
   color: rgb(94, 195, 253);
   /* background-color: rgba(0, 0, 0, 0.521); */
-  text-shadow: 2px 2px var(--navy);
+  text-shadow: 2px 2px darkslategray;
   text-decoration: none;
   font-weight: bold;
 }
@@ -88,8 +88,8 @@
 
 .nav-tabs button.active {
   background-color: rgba(38, 111, 172, 0.651) !important;
-  color: yellow !important;
-  text-shadow: 2px 2px var(--red) !important;
+  color: white !important;
+  /* text-shadow: 2px 2px var(--navy) !important; */
   border-bottom: 0px;
 }
 

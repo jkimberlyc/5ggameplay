@@ -72,10 +72,10 @@ footer {
   /* width: 20%; */
   display: inline-block;
   margin-left: 1px;
-  background-color: var(--red);
+  background-color: rgba(219, 0, 55, 0.87);
   text-shadow: none;
-  border: 2px solid var(--navy);
-  font-size: 12px !important;
+  border: 1px solid darkslategray;
+  font-size: 11px !important;
 }
 
 .badge:hover {
