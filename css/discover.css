@@ -100,3 +100,7 @@
 .card-group .card {
   background-color: #00c4931c;
 }
+
+#featuredGames {
+  border: 3px solid darkslategray;
+}
