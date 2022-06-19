@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --red: #d31027;
+  --gray: #a7a6a7;
+  --navy: #0a0239;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tab-content {
+  background-color: rgba(20, 69, 54, 0.219) !important;
+}
+
+.nav-pills button {
+  border-radius: 0 !important;
+}
+
+.display-6 {
+  font-family: "Bebas Neue", cursive;
+  background: rgb(33, 195, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 195, 195, 0) 31%,
+    rgba(52, 255, 255, 0.552) 81%
+  );
+}
+
+.tab-content a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.tab-content a:hover {
+  color: white;
+}

@@ -8,7 +8,7 @@
     <link href="../images/logo.ico" rel="icon" type="image/png" />
     <link rel="shortcut icon" href="../images/logo.ico" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/discover.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="text-white">
+  <body class="text-white d-flex flex-column min-vh-100">
     <header class="mb-1">
       <!-- Jumbotron -->
       <div class="px-3 pt-3 text-center text-white">
@@ -164,10 +164,142 @@
       </nav>
     </header>
     <!-- Main Content -->
-
-    <!-- FOOTER -->
-    <div class="container-fluid">
-      <footer class="py-3 mt">
+    <div class="container">
+      <div class="d-flex align-items-start">
+        <div
+          class="nav flex-column nav-pills w-25"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <button
+            class="nav-link active"
+            id="v-pills-account-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-account"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-account"
+            aria-selected="true"
+          >
+            Account
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-library-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-library"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-library"
+            aria-selected="false"
+          >
+            Game Library
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-Wishlist-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-Wishlist"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-Wishlist"
+            aria-selected="false"
+          >
+            Wishlist
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-settings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false"
+          >
+            Settings
+          </button>
+        </div>
+        <div class="container-fluid tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-account"
+            role="tabpanel"
+            aria-labelledby="v-pills-account-tab"
+          >
+            <div class="display-6 text-end p-2 mb-2 border-bottom">
+              ACCOUNT DETAILS
+            </div>
+            <div class="d-sm-flex flex-row">
+              <div class="w-100 p-3">
+                <a href="#" class="small"
+                  >+ Add funds to your Kodecoin Wallet</a
+                >
+                <div class="fs-1 text-end text-warning">
+                  100.00 <i class="fa-solid fa-coins text-warning"></i>
+                </div>
+                <hr />
+                <small class="text-gray"
+                  >You have no payment methods associated with this
+                  account.</small
+                >
+                <div>
+                  <a href="#" class="small"
+                    >Add a payment method to this account</a
+                  >
+                </div>
+              </div>
+              <div class="text-start p-3">
+                <p><a href="#" class="small">View purchase history</a></p>
+                <p>
+                  <a href="#" class="small">View product key activations</a>
+                </p>
+                <p>
+                  <small class="text-gray"
+                    >Country:<span class="text-white"> Philippines</span></small
+                  >
+                </p>
+                <p>
+                  <small class="text-gray"
+                    >If you have moved to a different country, you may be able
+                    to update your Kodecoin Wallet and how you view the 5G
+                    Store.</small
+                  >
+                </p>
+                <p><a href="#" class="small">Update store country</a></p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-library"
+            role="tabpanel"
+            aria-labelledby="v-pills-library-tab"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-wishlist"
+            role="tabpanel"
+            aria-labelledby="v-pills-wishlist-tab"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-settings"
+            role="tabpanel"
+            aria-labelledby="v-pills-settings-tab"
+          >
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 mt-auto">
+      <footer class="py-3 mt-auto">
         <ul class="nav justify-content-center pb-2 mb-2">
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-white">Discover</a>
