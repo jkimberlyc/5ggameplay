@@ -73,6 +73,7 @@ footer {
   display: inline-block;
   margin-left: 1px;
   background-color: var(--red);
+  text-shadow: none;
 }
 
 .badge:hover {
