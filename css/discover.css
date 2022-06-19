@@ -85,7 +85,7 @@
   color: white;
 }
 
-.nav-tabs > button.active {
+.nav-tabs button.active {
   background-color: rgba(38, 111, 172, 0.651) !important;
   color: yellow !important;
   text-shadow: 2px 2px var(--red) !important;
@@ -96,6 +96,6 @@
   font-size: 14px;
 }
 
-.card-group > .card {
+.card-group .card {
   background-color: #00c4931c;
 }
