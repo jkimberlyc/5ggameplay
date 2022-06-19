@@ -56,10 +56,11 @@
 
 .card-title a {
   font-family: "Source Code Pro", monospace;
-  color: white;
+  color: rgb(94, 195, 253);
   /* background-color: rgba(0, 0, 0, 0.521); */
-  text-shadow: 2px 2px red;
+  /* text-shadow: 1px 1px white; */
   text-decoration: none;
+  font-weight: bold;
 }
 
 .price {
