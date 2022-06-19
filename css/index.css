@@ -5,6 +5,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap");
 
 body {
   background: rgb(57, 112, 135);
@@ -68,14 +69,13 @@ footer {
 }
 
 .badge {
-  width: 20%;
-  margin: 3px;
+  /* width: 20%; */
+  display: inline-block;
+  margin-left: 1px;
   background-color: var(--red);
 }
 
 .badge:hover {
-  width: 20%;
-  margin: 3px;
   background: #eb3349; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -90,31 +90,37 @@ footer {
 }
 
 .nav-item:hover {
-  background: #d31027; /* fallback for old browsers */
+  /* background: #d31027; 
   background: -webkit-linear-gradient(
     to bottom,
     #ea384d,
     #d31027
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to bottom,
-    #ea384d,
-    #d31027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #ea384da1,
+    #d31027ab
+  ); */
   transition: 0.5s ease;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   letter-spacing: 2px;
 }
 
 .nav-item a {
-  font-family: "Source Code Pro", monospace;
-  color: var(--red);
-  font-weight: bold;
+  color: yellow;
+  /* font-family: "Source Code Pro", monospace; */
+  font-size: 16px;
+  text-shadow: 1px 1px red;
+  letter-spacing: 2px;
 }
 
 .nav-item a:hover {
   color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  letter-spacing: 3px;
+  transition: 0.3s ease;
 }
 
 .ls-1 {
@@ -135,4 +141,42 @@ footer {
 
 .ls-5 {
   letter-spacing: 5px;
+}
+
+.install {
+  background: #f00000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dc281e,
+    #f00000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dc281e,
+    #f00000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 3px 3px var(--navy);
+  color: yellow;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 0;
+  border-radius: 3px;
+  transition: 0.1s ease;
+  font-weight: bold;
+}
+
+.install:hover {
+  background: #f00000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dc281e,
+    #b90909
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dc281e,
+    #b90909
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: yellow;
+  letter-spacing: 1px;
 }

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+:root {
+  --red: #d31027;
+  --gray: #a7a6a7;
+  --navy: #0a0239;
+}
+
 /* .carousel .carousel-item {
   height: 60vh;
 }
@@ -29,31 +35,16 @@
   margin-bottom: 1rem;
 }
 
-.card-img-overlay:hover {
-  /* background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(201, 177, 124, 0) 50%,
-    rgba(253, 187, 45, 0) 100%
-  ); */
-  /* background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.5525560566023284) 0%,
-    rgba(150, 53, 210, 0.15199583251269255) 33%,
-    rgba(218, 239, 255, 0) 51%
-  ); */
+.card-img-overlay {
   background: rgb(12, 15, 23);
   background: linear-gradient(
     0deg,
-    rgba(12, 15, 23, 0.8463760504201681) 23%,
+    rgba(12, 15, 23, 0.8463760504201681) 5%,
     rgba(253, 187, 45, 0) 100%
   );
-  transition: 1s ease;
 }
 
-.card-img-overlay {
+/* .card-img-overlay {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -61,4 +52,50 @@
     rgba(150, 53, 210, 0.15199583251269255) 33%,
     rgba(218, 239, 255, 0) 51%
   );
+} */
+
+.card-title a {
+  font-family: "Source Code Pro", monospace;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.521); */
+  text-shadow: 2px 2px red;
+  text-decoration: none;
+}
+
+.price {
+  font-family: "Source Code Pro", monospace;
+}
+
+.card-title a:hover {
+  color: yellow;
+  /* background-color: rgba(0, 0, 0, 0.521); */
+}
+
+.carousel-caption {
+  text-shadow: 2px 2px black;
+}
+
+.modal-title,
+.modal-body label {
+  color: white;
+  text-shadow: 2px 2px navy;
+}
+
+#nav-tab button {
+  color: white;
+}
+
+.nav-tabs > button.active {
+  background-color: rgba(38, 111, 172, 0.651) !important;
+  color: yellow !important;
+  text-shadow: 2px 2px var(--red) !important;
+  border-bottom: 0px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-group > .card {
+  background-color: #00c4931c;
 }
