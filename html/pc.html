@@ -8,6 +8,7 @@
     <link href="../images/logo.ico" rel="icon" type="image/png" />
     <link rel="shortcut icon" href="../images/logo.ico">
     <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/pc.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -54,12 +55,130 @@
             >
               <div class="d-flex">
                 <!-- Cart -->
-                <a class="text-reset me-3 d-none d-md-block" href="#">
-                  <span><i class="fas fa-shopping-cart"></i></span>
-                  <span class="badge rounded-pill badge-notification bg-danger"
-                    >1</span
-                  >
+                <a
+                  class="text-reset me-3 d-none d-md-block"
+                  role="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="fas fa-shopping-cart"></i>
                 </a>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header text-dark">
+                    <div id="offcanvasRightLabel">
+                      <h4
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <span class="text-muted">Your cart</span>
+                        <span class="badge badge-secondary badge-pill text-end"
+                          >3</span
+                        >
+                      </h4>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="list-group mb-3">
+                      <li
+                        class="list-group-item d-flex justify-content-between lh-condensed"
+                      >
+                        <div>
+                          <h6 class="my-0">Minecraft : First Edition</h6>
+                          <small class="text-muted"></small>
+                        </div>
+                        <span class="text-muted">
+                          <i class="fa-solid fa-coins text-warning"></i>
+                          12</span
+                        >
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between lh-condensed"
+                      >
+                        <div>
+                          <h6 class="my-0">Cyberpunk 2077</h6>
+                          <small class="text-muted">On Sale</small>
+                        </div>
+                        <span class="text-muted"
+                          ><i class="fa-solid fa-coins text-warning"></i>
+                          999</span
+                        >
+                      </li>
+
+                      <li
+                        class="list-group-item d-flex justify-content-between bg-light"
+                      >
+                        <div class="text-success">
+                          <h6 class="my-0">Promo code</h6>
+                          <small>EXAMPLECODE</small>
+                        </div>
+                        <span class="text-success"
+                          >-
+                          <i class="fa-solid fa-coins text-warning"></i>
+                          15</span
+                        >
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between"
+                      >
+                        <span>Balance</span>
+                        <span
+                          ><i class="fa-solid fa-coins text-warning"></i>
+                          100</span
+                        >
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between"
+                      >
+                        <span>Total (Kodecoin)</span>
+                        <strong
+                          ><i class="fa-solid fa-coins text-warning"></i>
+                          996</strong
+                        >
+                      </li>
+                    </ul>
+                    <form class="card p-2 mb-4">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Promo code"
+                        />
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-secondary">
+                            Redeem
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <p class="small text-muted text-start">
+                      You have no payment methods associated with this
+                      account.<span
+                        ><a href="profile.html" class="text-decoration-none">
+                          Set one now.</a
+                        ></span
+                      >
+                    </p>
+                    <p class="small text-red text-end">
+                      Insufficient balance <br />
+
+                      <button class="install" disabled>
+                        Proceed to Checkout
+                      </button>
+                    </p>
+                  </div>
+                </div>
 
                 <!-- User -->
                 <div class="dropdown d-none d-md-block">
@@ -83,27 +202,27 @@
                     class="dropdown-menu dropdown-menu-end"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                  <li>
-                    <a class="dropdown-item" href="profile.html">Profile</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="profile.html#library"
-                      >Library</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="profile.html#wishlist"
-                      >Wishlist</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="profile.html#settings"
-                      >Settings</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../index.html">Logout</a>
-                  </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html#library"
+                        >Library</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html#wishlist"
+                        >Wishlist</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile.html#settings"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../index.html">Logout</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -155,6 +274,15 @@
                 <a class="nav-link" href="../html/console.html">Console</a>
               </li>
               <li class="nav-item me-2 d-block d-md-none">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  >Cart</a
+                >
+              </li>
+              <li class="nav-item me-2 d-block d-md-none">
                 <a class="nav-link" href="../html/profile.html">Profile</a>
               </li>
             </ul>
@@ -164,603 +292,611 @@
     </header>
     <!-- Main Content -->
                        <!----- Action Games  ----->
-    <section class="container">
-        <div class="text-white"><h2> Action Games</h2></div>
-        <br>
-        <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
-                        <!------ Game 1 ------>
-          <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-             <table border="0">
-                <tr>
-                  <td> <div class="d-flex p-2 justify-content-center">
-                  <img src="../images/Mostw.png" width="100%" height="200vh"> </div> </td>
-                </tr>
-                <tr>
-                  <td><span><h1 style="font-size:120%; color: white"> Need For Speed : Most Wanted </h1> </span>
-                  <span><p style="color: rgb(189, 179, 179);">The open-world action in Need for Speed Most Wanted gives you the freedom to
-                  drive your way. Hit jumps and shortcuts, switch cars, lie low, or head for terrain that plays to your vehicles unique strengths.</p></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="text-center p-2">
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1"> Install </button>
-                    <div class="modal" id="myModal1">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                            <h5 class="modal-title"> Install Now </h5>
+                       <section class="container">
+                        <div class="display-5 ls-3">Action</div>
+                        <br>
+                        <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
+                                        <!------ Game 1 ------>
+                          <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                             <table border="0">
+                                <tr>
+                                  <td> <div class="d-flex p-2 justify-content-center">
+                                  <img src="../images/Mostw.png" width="100%" height="200vh"> </div> </td>
+                                </tr>
+                                <tr>
+                                  <td><span><h1 style="font-size:120%; color: white"> Need For Speed : Most Wanted </h1> </span>
+                                  <span><p style="color: rgb(189, 179, 179);">The open-world action in Need for Speed Most Wanted gives you the freedom to
+                                  drive your way. Hit jumps and shortcuts, switch cars, lie low, or head for terrain that plays to your vehicles unique strengths.</p></span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center p-2">
+                                    <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal1"> See more </button>
+                                    <div class="modal" id="myModal1">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                            <h5 class="modal-title"> Install Now </h5>
+                                          </div>
+                                          <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                            <img src="../images\Mostw.png" width="100%" height="200vh"> 
+                                            <h1 style="font-size:120%; text-align: start;"> Need For Speed : Most Wanted </h1>
+                                            <h2 style="font-size: 110%; text-align: start; color: gray;"> Criterion Software </h2>
+                                            <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                              <i class="fa-solid fa-coins text-warning"> 15 </i>
+                                              <span class="fa fa-star text-warning ms-3"></span>
+                                              <span class="fa fa-star text-warning"></span>
+                                              <span class="fa fa-star text-warning"></span>
+                                              <span class="fa fa-star text-warning"></span>
+                                              <span class="fa fa-star text-warning"></span>
+                                            </h3>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                            <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                            <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                            </table>   
                           </div>
-                          <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                            <img src="../images\Mostw.png" width="100%" height="200vh"> 
-                            <h1 style="font-size:120%; text-align: start;"> Need For Speed : Most Wanted </h1>
-                            <h2 style="font-size: 110%; text-align: start; color: gray;"> Criterion Software </h2>
-                            <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                              <i class="fa-solid fa-coins text-warning"> 15 </i>
-                              <span class="fa fa-star text-warning ms-3"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                            </h3>
-                          </div>
-                          <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                            <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/58zrhn7h" style="text-decoration: none; color: white">Install</a></button>
-                            <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                          </div>
+                                   <!------ GAME 2 ------>
+                            <div class="ms-5"></div>
+                            <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                              <table border="0">
+                                 <tr>
+                                   <td> <div class="d-flex p-2 justify-content-center">
+                                   <img src="../images/gtaiv.jpg" width="100%" height="200vh"> </div> </td>
+                                 </tr>
+                                 <tr>
+                                   <td><span><h1 style="font-size:120%; color: white"> GTA IV : San Andreas </h1> </span>
+                                   <span><p style="color: rgb(189, 179, 179);"> GTA IV: San Andreas is an awesome mod for 
+                                    GTA IV that lets you play and enjoy the city of San Andreas, the legendary city that provided hours and hours of gangs and fun.</p></span>
+                                   </td>
+                                 </tr>
+                                 <tr>
+                                  <td class="text-center p-2">
+                                    <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal2"> See more </button>
+                                    <div class="modal" id="myModal2">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                            <h5 class="modal-title"> Install Now </h5>
+                                          </div>
+                                          <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                           <img src="../images\gtaiv.jpg" width="100%" height="200vh">
+                                            <h1 style="font-size:120%; text-align: start;"> GTA IV: San Andreas </h1>
+                                            <h2 style="font-size: 110%; text-align: start; color: gray;"> Rockstar North/Toronto </h2>
+                                            <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                             <i class="fa-solid fa-coins text-warning"> 15 </i>
+                                             <span class="fa fa-star text-warning ms-3"></span>
+                                             <span class="fa fa-star text-warning"></span>
+                                             <span class="fa fa-star text-warning"></span>
+                                             <span class="fa fa-star text-warning"></span>
+                                             <span class="fa fa-star"></span>
+                                           </h3>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                            <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                            <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                 </tr>
+                             </table>   
+                           </div>
+                                             <!--------- GAME 3 --------->
+                             <div class="ms-5"></div> 
+                             <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                              <table border="0">
+                                 <tr>
+                                   <td> <div class="d-flex p-2 justify-content-center">
+                                   <img src="../images\bf2.jpg" width="100%" height="200vh"> </div> </td>
+                                 </tr>
+                                 <tr>
+                                   <td><span><h1 style="font-size:120%; color: white"> Battlefield 2 </h1> </span>
+                                   <span><p style="color: rgb(189, 179, 179);">Players fight in a modern battlefield, using modern weapon systems.
+                                     Battlefield 2 is a first-person shooter with some strategy and Tactical Shooter elements. <br> and it is action pack </p></span>
+                                   </td>
+                                 </tr>
+                                 <tr>
+                                  <td class="text-center p-2">
+                                    <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal3"> See more </button>
+                                    <div class="modal" id="myModal3">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                            <h5 class="modal-title"> Install Now </h5>
+                                          </div>
+                                          <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                            <img src="../images\bf2.jpg" width="100%" height="200vh">
+                                            <h1 style="font-size:120%; text-align: start;"> Battlefield 2 </h1>
+                                            <h2 style="font-size: 110%; text-align: start; color: gray;"> DICE </h2>
+                                            <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                             <i class="fa-solid fa-coins text-warning"> 13 </i>
+                                             <span class="fa fa-star text-warning ms-3"></span>
+                                             <span class="fa fa-star text-warning"></span>
+                                             <span class="fa fa-star text-warning"></span>
+                                             <span class="fa fa-star text-warning"></span>
+                                             <span class="fa fa-star"></span>
+                                           </h3>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                            <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                            <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                 </tr>
+                             </table> 
+                           </div>
+                    </section>
+                  
+                                 <!---- Adventure Games ---->
+                    <section class="container">
+                      <div class="display-5 ls-3">Adventure</div>
+                      <br>
+                      <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
+                                      <!------ Game 1 ------>
+                        <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                           <table border="0">
+                              <tr>
+                                <td> <div class="d-flex p-2 justify-content-center">
+                                <img src="../images/terraria_thumbnail.jpg" width="100%" height="200vh"> </div> </td>
+                              </tr>
+                              <tr>
+                                <td><span><h1 style="font-size:120%; color: white"> Terraria </h1> </span>
+                                <span><p style="color: rgb(189, 179, 179);">Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. The world is your canvas and the ground itself is your paint.</p></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center p-2">
+                                  <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal4"> See more </button>
+                                  <div class="modal" id="myModal4">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                          <h5 class="modal-title"> Install Now </h5>
+                                        </div>
+                                        <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                          <img src="../images/terraria_thumbnail.jpg" width="100%" height="200vh">
+                                          <h1 style="font-size:120%; text-align: start;"> Terraria  </h1>
+                                          <h2 style="font-size: 110%; text-align: start; color: gray;"> Re-Logic </h2>
+                                          <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                            <span class="text-warning"><i class="fa-solid fa-coins text-warning"> 359</i></span> 
+                                            <span class="fa fa-star text-warning ms-3"></span>
+                                            <span class="fa fa-star text-warning"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                          </h3>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                          <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                          <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                          </table>   
                         </div>
+                                 <!------ GAME 2 ------>
+                          <div class="ms-5"></div>
+                          <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                            <table border="0">
+                               <tr>
+                                 <td> <div class="d-flex p-2 justify-content-center">
+                                 <img src="../images\anxiety.jpg" width="100%" height="200vh"> </div> </td>
+                               </tr>
+                               <tr>
+                                 <td><span><h1 style="font-size:120%; color: white"> Anxiety : Lost Night </h1> </span>
+                                 <span><p style="color: rgb(189, 179, 179);"> Anxiety: Lost Night is a 2D puzzle horror game, which player are trapped in a car in middle of nowhere. 
+                                  Solve the mystery beneath the character's anxiety and what cause it to occurred.</p></span>
+                                 </td>
+                               </tr>
+                               <tr>
+                                <td class="text-center p-2">
+                                  <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal5"> See more </button>
+                                  <div class="modal" id="myModal5">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                          <h5 class="modal-title"> Install Now </h5>
+                                        </div>
+                                        <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                          <img src="../images\anxiety.jpg" width="100%" height="200vh">
+                                          <h1 style="font-size:120%; text-align: start;"> Anxiety : Lost Night </h1>
+                                          <h2 style="font-size: 110%; text-align: start; color: gray;"> Circus Horse </h2>
+                                          <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                           <i class="fa-solid fa-coins text-warning"> 4 </i>
+                                           <span class="fa fa-star text-warning ms-3"></span>
+                                           <span class="fa fa-star text-warning"></span>
+                                           <span class="fa fa-star text-warning"></span>
+                                           <span class="fa fa-star"></span>
+                                           <span class="fa fa-star"></span>
+                                         </h3>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                          <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                          <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                               </tr>
+                           </table>   
+                         </div>
+                                           <!--------- GAME 3 --------->
+                           <div class="ms-5"></div> 
+                           <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                            <table border="0">
+                               <tr>
+                                 <td> <div class="d-flex p-2 justify-content-center">
+                                 <img src="../images\minecraft.png" width="100%" height="200vh"> </div> </td>
+                               </tr>
+                               <tr>
+                                 <td><span><h1 style="font-size:120%; color: white"> Minecraft : First Edition </h1> </span>
+                                 <span><p style="color: rgb(189, 179, 179);">Minecraft is a 3-D computer game where players can build anything. The game which has been 
+                                  described as like an 'online Lego' involves building blocks and creating structures across different environments. </p></span>
+                                 </td>
+                               </tr>
+                               <tr>
+                                <td class="text-center p-2">
+                                <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal6"> See more </button>
+                                <div class="modal" id="myModal6">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <h5 class="modal-title"> Install Now </h5>
+                                      </div>
+                                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <img src="../images\minecraft.png" width="100%" height="200vh">
+                                        <h1 style="font-size:120%; text-align: start;"> Minecraft : First Edition </h1>
+                                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Mojang Studios </h2>
+                                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                         <i class="fa-solid fa-coins text-warning"> 24 </i>
+                                         <span class="fa fa-star text-warning ms-3"></span>
+                                         <span class="fa fa-star text-warning"></span>
+                                         <span class="fa fa-star text-warning"></span>
+                                         <span class="fa fa-star text-warning"></span>
+                                         <span class="fa fa-star text-warning"></span>
+                                       </h3>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                        <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                        <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                           </td>
+                          </tr>
+                        </table>   
                       </div>
+                  </section>
+                               <!----- Strategy/Card Games ----->
+                  <section class="container">
+                    <div class="display-5 ls-3">Strategy</div>
+                    <br>
+                    <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
+                                    <!------ Game 1 ------>
+                      <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                         <table border="0">
+                            <tr>
+                              <td> <div class="d-flex p-2 justify-content-center">
+                              <img src="../images/sc2.jpg" width="100%" height="200vh"> </div> </td>
+                            </tr>
+                            <tr>
+                              <td><span><h1 style="font-size:120%; color: white"> StarCraft II </h1> </span>
+                              <span><p style="color: rgb(189, 179, 179);">StarCraft II: Wings of Liberty is a science fiction real-time strategy video game developed and published by Blizzard Entertainment. 
+                                Wage war across the galaxy with three unique and powerful races.</p></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center p-2">
+                                <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal7"> See more</button>
+                                <div class="modal" id="myModal7">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <h5 class="modal-title"> Install Now </h5>
+                                      </div>
+                                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <img src="../images\sc2.jpg" width="100%" height="200vh">
+                                        <h1 style="font-size:120%; text-align: start;"> StarCraft II </h1>
+                                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Blizzard Entertainment </h2>
+                                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                          <i class="fa-solid fa-coins text-warning"> 14 </i>
+                                          <span class="fa fa-star text-warning ms-3"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                          <span class="fa fa-star text-warning"></span>
+                                        </h3>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                        <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                        <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                        </table>   
+                      </div>
+                               <!------ GAME 2 ------>
+                        <div class="ms-5"></div>
+                        <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                          <table border="0">
+                             <tr>
+                               <td> <div class="d-flex p-2 justify-content-center">
+                               <img src="../images\spectro.jpg" width="100%" height="200vh"> </div> </td>
+                             </tr>
+                             <tr>
+                               <td><span><h1 style="font-size:120%; color: white"> Spectromancer </h1> </span>
+                               <span><p style="color: rgb(189, 179, 179);"> a fantasy card game, players participate in a magical duel against other mages
+                                by strategically summoning creatures and casting spells. Each mage uses five magical elements.</p></span>
+                               </td>
+                             </tr>
+                             <tr>
+                              <td class="text-center p-2">
+                                <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal8"> See more</button>
+                                <div class="modal" id="myModal8">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <h5 class="modal-title"> Install Now </h5>
+                                      </div>
+                                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <img src="../images\spectro.jpg" width="100%" height="200vh">
+                                        <h1 style="font-size:120%; text-align: start;"> Spectromancer </h1>
+                                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Apus Software </h2>
+                                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                         <i class="fa-solid fa-coins text-warning"> 3 </i>
+                                         <span class="fa fa-star text-warning ms-3"></span>
+                                         <span class="fa fa-star text-warning"></span>
+                                         <span class="fa fa-star"></span>
+                                         <span class="fa fa-star"></span>
+                                         <span class="fa fa-star"></span>
+                                       </h3>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                        <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                        <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                      </div>
+                                  </div>
+                                </div>
+                              </td>
+                             </tr>
+                         </table>   
+                       </div>
+                                         <!--------- GAME 3 --------->
+                         <div class="ms-5"></div> 
+                         <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                          <table border="0">
+                             <tr>
+                               <td> <div class="d-flex p-2 justify-content-center">
+                               <img src="../images\loh.jpg" width="100%" height="200vh"> </div> </td>
+                             </tr>
+                             <tr>
+                               <td><span><h1 style="font-size:120%; color: white"> Legends of Honor </h1> </span>
+                               <span><p style="color: rgb(189, 179, 179);"> Legends of Honor is an MMO browser game in which fierce PvP warfare and strategic 
+                                battle planning go hand in hand with empire building and alliance diplomacy created by Goodgame Studios. </p></span>
+                               </td>
+                             </tr>
+                             <tr>
+                              <td class="text-center p-2">
+                                <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal9">See more </button>
+                                <div class="modal" id="myModal9">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <h5 class="modal-title"> Install Now </h5>
+                                      </div>
+                                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                        <img src="../images\loh.jpg" width="100%" height="200vh">
+                                        <h1 style="font-size:120%; text-align: start;"> Legends of Honor </h1>
+                                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Apus Software </h2>
+                                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                         <i class="fa-solid fa-coins text-warning"> 6 </i>
+                                         <span class="fa fa-star text-warning ms-3"></span>
+                                         <span class="fa fa-star text-warning"></span>
+                                         <span class="fa fa-star text-warning"></span>
+                                         <span class="fa fa-star"></span>
+                                         <span class="fa fa-star"></span>
+                                       </h3>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                        <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                        <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                      </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </div>
+                             </tr>
+                         </table> 
+                       </div>
+                </section>  
+                <section class="container">
+                  <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
+                                  <!------ Game 1 ------>
+                    <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                       <table border="0">
+                          <tr>
+                            <td> <div class="d-flex p-2 justify-content-center">
+                            <img src="../images\yugi.jpg" width="100%" height="200vh"> </div> </td>
+                          </tr>
+                          <tr>
+                            <td><span><h1 style="font-size:120%; color: white"> Yu-Gi-Oh! - The Legend Reborn </h1> </span>
+                            <span><p style="color: rgb(189, 179, 179);">Yu-Gi-Oh! - The Legend Reborn is a very complete trading card game, with an enormous amount of cards (more than a thousand) 
+                              added to a single-player mode against a competent computer.</p></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center p-2">
+                              <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal10">See more </button>
+                              <div class="modal" id="myModal10">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                      <h5 class="modal-title"> Install Now </h5>
+                                    </div>
+                                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                      <img src="../images\yugi.jpg" width="100%" height="200vh"> 
+                                      <h1 style="font-size:120%; text-align: start;"> Yu-Gi-Oh! - The Legend Reborn </h1>
+                                      <h2 style="font-size: 110%; text-align: start; color: gray;"> Konami inc. </h2>
+                                      <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                        <i class="fa-solid fa-coins text-warning"> 15 </i>
+                                        <span class="fa fa-star text-warning ms-3"></span>
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star"></span>
+                                      </h3>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                      <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                      <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                      </table>   
                     </div>
-                  </td>
-                </tr>
-            </table>   
-          </div>
-                   <!------ GAME 2 ------>
-            <div class="ms-5"></div>
-            <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-              <table border="0">
-                 <tr>
-                   <td> <div class="d-flex p-2 justify-content-center">
-                   <img src="../images/gtaiv.jpg" width="100%" height="200vh"> </div> </td>
-                 </tr>
-                 <tr>
-                   <td><span><h1 style="font-size:120%; color: white"> GTA IV : San Andreas </h1> </span>
-                   <span><p style="color: rgb(189, 179, 179);"> GTA IV: San Andreas is an awesome mod for 
-                    GTA IV that lets you play and enjoy the city of San Andreas, the legendary city that provided hours and hours of gangs and fun.</p></span>
-                   </td>
-                 </tr>
-                 <tr>
-                  <td class="text-center p-2">
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2"> Install </button>
-                    <div class="modal" id="myModal2">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                            <h5 class="modal-title"> Install Now </h5>
-                          </div>
-                          <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                           <img src="../images/gtaiv.jpg" width="100%" height="200vh">
-                            <h1 style="font-size:120%; text-align: start;"> GTA IV: San Andreas </h1>
-                            <h2 style="font-size: 110%; text-align: start; color: gray;"> Rockstar North/Toronto </h2>
-                            <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                             <i class="fa-solid fa-coins text-warning"> 15 </i>
-                             <span class="fa fa-star text-warning ms-3"></span>
-                             <span class="fa fa-star text-warning"></span>
-                             <span class="fa fa-star text-warning"></span>
-                             <span class="fa fa-star text-warning"></span>
-                             <span class="fa fa-star"></span>
-                           </h3>
-                          </div>
-                          <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                            <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/ucpa2t3m" style="text-decoration: none; color: white">Install</a></button>
-                            <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                 </tr>
-             </table>   
-           </div>
-                             <!--------- GAME 3 --------->
-             <div class="ms-5"></div> 
-             <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-              <table border="0">
-                 <tr>
-                   <td> <div class="d-flex p-2 justify-content-center">
-                   <img src="../images/bf2.jpg" width="100%" height="200vh"> </div> </td>
-                 </tr>
-                 <tr>
-                   <td><span><h1 style="font-size:120%; color: white"> Battlefield 2 </h1> </span>
-                   <span><p style="color: rgb(189, 179, 179);">Players fight in a modern battlefield, using modern weapon systems.
-                     Battlefield 2 is a first-person shooter with some strategy and Tactical Shooter elements. <br> and it is action pack </p></span>
-                   </td>
-                 </tr>
-                 <tr>
-                  <td class="text-center p-2">
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal3"> Install </button>
-                    <div class="modal" id="myModal3">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                            <h5 class="modal-title"> Install Now </h5>
-                          </div>
-                          <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                            <img src="../images/bf2.jpg" width="100%" height="200vh">
-                            <h1 style="font-size:120%; text-align: start;"> Battlefield 2 </h1>
-                            <h2 style="font-size: 110%; text-align: start; color: gray;"> DICE </h2>
-                            <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                             <i class="fa-solid fa-coins text-warning"> 13 </i>
-                             <span class="fa fa-star text-warning ms-3"></span>
-                             <span class="fa fa-star text-warning"></span>
-                             <span class="fa fa-star text-warning"></span>
-                             <span class="fa fa-star text-warning"></span>
-                             <span class="fa fa-star"></span>
-                           </h3>
-                          </div>
-                          <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                            <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/2p9b68rc" style="text-decoration: none; color: white">Install</a></button>
-                            <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                 </tr>
-             </table> 
-           </div>
-    </section>
-  
-                 <!---- Adventure Games ---->
-    <section class="container">
-      <div class="text-white"><h2> Adventures Games</h2></div>
-      <br>
-      <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
-                      <!------ Game 1 ------>
-        <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-           <table border="0">
-              <tr>
-                <td> <div class="d-flex p-2 justify-content-center">
-                <img src="../images/terraria_thumbnail.jpg" width="100%" height="200vh"> </div> </td>
-              </tr>
-              <tr>
-                <td><span><h1 style="font-size:120%; color: white"> Terraria </h1> </span>
-                <span><p style="color: rgb(189, 179, 179);">Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. The world is your canvas and the ground itself is your paint.</p></span>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center p-2">
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal4"> Install </button>
-                  <div class="modal" id="myModal4">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                          <h5 class="modal-title"> Install Now </h5>
-                        </div>
-                        <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                          <img src="../images/terraria_thumbnail.jpg" width="100%" height="200vh">
-                          <h1 style="font-size:120%; text-align: start;"> Terraria  </h1>
-                          <h2 style="font-size: 110%; text-align: start; color: gray;"> Blizzard Entertainment </h2>
-                          <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                            <span class="text-warning">Free To Play  </span> 
-                            <span class="fa fa-star text-warning ms-3"></span>
-                            <span class="fa fa-star text-warning"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                          </h3>
-                        </div>
-                        <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                          <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/58zrhn7h" style="text-decoration: none; color: white">Install</a></button>
-                          <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-          </table>   
-        </div>
-                 <!------ GAME 2 ------>
-          <div class="ms-5"></div>
-          <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-            <table border="0">
-               <tr>
-                 <td> <div class="d-flex p-2 justify-content-center">
-                 <img src="../images/anxiety.jpg" width="100%" height="200vh"> </div> </td>
-               </tr>
-               <tr>
-                 <td><span><h1 style="font-size:120%; color: white"> Anxiety : Lost Night </h1> </span>
-                 <span><p style="color: rgb(189, 179, 179);"> Anxiety: Lost Night is a 2D puzzle horror game, which player are trapped in a car in middle of nowhere. 
-                  Solve the mystery beneath the character's anxiety and what cause it to occurred.</p></span>
-                 </td>
-               </tr>
-               <tr>
-                <td class="text-center p-2">
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal5"> Install </button>
-                  <div class="modal" id="myModal5">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                          <h5 class="modal-title"> Install Now </h5>
-                        </div>
-                        <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                          <img src="../images/anxiety.jpg" width="100%" height="200vh">
-                          <h1 style="font-size:120%; text-align: start;"> Anxiety : Lost Night </h1>
-                          <h2 style="font-size: 110%; text-align: start; color: gray;"> Circus Horse </h2>
-                          <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                           <i class="fa-solid fa-coins text-warning"> 4 </i>
-                           <span class="fa fa-star text-warning ms-3"></span>
-                           <span class="fa fa-star text-warning"></span>
-                           <span class="fa fa-star text-warning"></span>
-                           <span class="fa fa-star"></span>
-                           <span class="fa fa-star"></span>
-                         </h3>
-                        </div>
-                        <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                          <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/ucpa2t3m" style="text-decoration: none; color: white">Install</a></button>
-                          <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-               </tr>
-           </table>   
-         </div>
-                           <!--------- GAME 3 --------->
-           <div class="ms-5"></div> 
-           <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-            <table border="0">
-               <tr>
-                 <td> <div class="d-flex p-2 justify-content-center">
-                 <img src="../images/minecraft.png" width="100%" height="200vh"> </div> </td>
-               </tr>
-               <tr>
-                 <td><span><h1 style="font-size:120%; color: white"> Minecraft : First Edition </h1> </span>
-                 <span><p style="color: rgb(189, 179, 179);">Minecraft is a 3-D computer game where players can build anything. The game which has been 
-                  described as like an 'online Lego' involves building blocks and creating structures across different environments. </p></span>
-                 </td>
-               </tr>
-               <tr>
-                <td class="text-center p-2">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal6"> Install </button>
-                <div class="modal" id="myModal6">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                        <h5 class="modal-title"> Install Now </h5>
-                      </div>
-                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                        <img src="../images/minecraft.png" width="100%" height="200vh">
-                        <h1 style="font-size:120%; text-align: start;"> Minecraft : First Edition </h1>
-                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Mojang Studios </h2>
-                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                         <i class="fa-solid fa-coins text-warning"> 24 </i>
-                         <span class="fa fa-star text-warning ms-3"></span>
-                         <span class="fa fa-star text-warning"></span>
-                         <span class="fa fa-star text-warning"></span>
-                         <span class="fa fa-star text-warning"></span>
-                         <span class="fa fa-star text-warning"></span>
-                       </h3>
-                      </div>
-                      <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                        <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/2p9b68rc" style="text-decoration: none; color: white">Install</a></button>
-                        <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-           </td>
-          </tr>
-        </table>   
-      </div>
-  </section>
-               <!----- Strategy/Card Games ----->
-  <section class="container">
-    <div class="text-white"><h2> Strategy/Card Games </h2></div>
-    <br>
-    <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
-                    <!------ Game 1 ------>
-      <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-         <table border="0">
-            <tr>
-              <td> <div class="d-flex p-2 justify-content-center">
-              <img src="../images/sc2.jpg" width="100%" height="200vh"> </div> </td>
-            </tr>
-            <tr>
-              <td><span><h1 style="font-size:120%; color: white"> StarCraft II </h1> </span>
-              <span><p style="color: rgb(189, 179, 179);">StarCraft II: Wings of Liberty is a science fiction real-time strategy video game developed and published by Blizzard Entertainment. 
-                Wage war across the galaxy with three unique and powerful races.</p></span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-center p-2">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal7"> Install </button>
-                <div class="modal" id="myModal7">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                        <h5 class="modal-title"> Install Now </h5>
-                      </div>
-                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                        <img src="../images/sc2" width="100%" height="200vh">
-                        <h1 style="font-size:120%; text-align: start;"> StarCraft II </h1>
-                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Blizzard Entertainment </h2>
-                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                          <i class="fa-solid fa-coins text-warning"> 14 </i>
-                          <span class="fa fa-star text-warning ms-3"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                        </h3>
-                      </div>
-                      <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                        <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/58zrhn7h" style="text-decoration: none; color: white">Install</a></button>
-                        <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-        </table>   
-      </div>
-               <!------ GAME 2 ------>
-        <div class="ms-5"></div>
-        <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-          <table border="0">
-             <tr>
-               <td> <div class="d-flex p-2 justify-content-center">
-               <img src="../images/spectro.jpg" width="100%" height="200vh"> </div> </td>
-             </tr>
-             <tr>
-               <td><span><h1 style="font-size:120%; color: white"> Spectromancer </h1> </span>
-               <span><p style="color: rgb(189, 179, 179);"> a fantasy card game, players participate in a magical duel against other mages
-                by strategically summoning creatures and casting spells. Each mage uses five magical elements.</p></span>
-               </td>
-             </tr>
-             <tr>
-              <td class="text-center p-2">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal8"> Install </button>
-                <div class="modal" id="myModal8">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                        <h5 class="modal-title"> Install Now </h5>
-                      </div>
-                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                        <img src="../images/spectro.jpg width="100%" height="200vh">
-                        <h1 style="font-size:120%; text-align: start;"> Spectromancer </h1>
-                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Apus Software </h2>
-                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                         <i class="fa-solid fa-coins text-warning"> 3 </i>
-                         <span class="fa fa-star text-warning ms-3"></span>
-                         <span class="fa fa-star text-warning"></span>
-                         <span class="fa fa-star"></span>
-                         <span class="fa fa-star"></span>
-                         <span class="fa fa-star"></span>
-                       </h3>
-                      </div>
-                      <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                        <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/ucpa2t3m" style="text-decoration: none; color: white">Install</a></button>
-                        <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-             </tr>
-         </table>   
-       </div>
-                         <!--------- GAME 3 --------->
-         <div class="ms-5"></div> 
-         <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-          <table border="0">
-             <tr>
-               <td> <div class="d-flex p-2 justify-content-center">
-               <img src="../images/loh.jpg" width="100%" height="200vh"> </div> </td>
-             </tr>
-             <tr>
-               <td><span><h1 style="font-size:120%; color: white"> Legends of Honor </h1> </span>
-               <span><p style="color: rgb(189, 179, 179);"> Legends of Honor is an MMO browser game in which fierce PvP warfare and strategic 
-                battle planning go hand in hand with empire building and alliance diplomacy created by Goodgame Studios. </p></span>
-               </td>
-             </tr>
-             <tr>
-              <td class="text-center p-2">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal9"> Install </button>
-                <div class="modal" id="myModal9">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                        <h5 class="modal-title"> Install Now </h5>
-                      </div>
-                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                        <img src="../images/loh.jpg" width="100%" height="200vh">
-                        <h1 style="font-size:120%; text-align: start;"> Legends of Honor </h1>
-                        <h2 style="font-size: 110%; text-align: start; color: gray;"> Apus Software </h2>
-                        <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                         <i class="fa-solid fa-coins text-warning"> 6 </i>
-                         <span class="fa fa-star text-warning ms-3"></span>
-                         <span class="fa fa-star text-warning"></span>
-                         <span class="fa fa-star text-warning"></span>
-                         <span class="fa fa-star"></span>
-                         <span class="fa fa-star"></span>
-                       </h3>
-                      </div>
-                      <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                        <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/2p9b68rc" style="text-decoration: none; color: white">Install</a></button>
-                        <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </div>
-             </tr>
-         </table> 
-       </div>
-</section>  
+                             <!------ GAME 2 ------>
+                      <div class="ms-5"></div>
+                      <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                        <table border="0">
+                           <tr>
+                             <td> <div class="d-flex p-2 justify-content-center">
+                             <img src="../images\CCG.jpg" width="100%" height="200vh"> </div> </td>
+                           </tr>
+                           <tr>
+                             <td><span><h1 style="font-size:120%; color: white"> Command & Conquer : Generals  </h1> </span>
+                             <span><p style="color: rgb(189, 179, 179);">Command & Conquer: Generals is a real-time strategy video game developed by EA Pacific and released in 2003. 
+                              The game takes place in an entirely separate continuity.</p></span>
+                             </td>
+                           </tr>
+                           <tr>
+                            <td class="text-center p-2">
+                              <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal11"> See more </button>
+                              <div class="modal" id="myModal11">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                      <h5 class="modal-title"> Install Now </h5>
+                                    </div>
+                                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                      <img src="../images\CCG.jpg" width="100%" height="200vh">
+                                      <h1 style="font-size:120%; text-align: start;"> Command & Conquer : Generals  </h1>
+                                      <h2 style="font-size: 110%; text-align: start; color: gray;"> EA Pacific </h2>
+                                      <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                       <i class="fa-solid fa-coins text-warning"> 5 </i>
+                                       <span class="fa fa-star text-warning ms-3"></span>
+                                       <span class="fa fa-star text-warning"></span>
+                                       <span class="fa fa-star text-warning"></span>
+                                       <span class="fa fa-star text-warning"></span>
+                                       <span class="fa fa-star"></span>
+                                     </h3>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                      <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                      <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                           </tr>
+                       </table>   
+                     </div>
+                                       <!--------- GAME 3 --------->
+                       <div class="ms-5"></div> 
+                       <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
+                        <table border="0">
+                           <tr>
+                             <td> <div class="d-flex p-2 justify-content-center">
+                             <img src="../images\wc3.jpg" width="100%" height="200vh"> </div> </td>
+                           </tr>
+                           <tr>
+                             <td><span><h1 style="font-size:120%; color: white"> Warcraft III: Reign of Chaos </h1> </span>
+                             <span><p style="color: rgb(189, 179, 179);">The game follows the story of three different heroes: The one of young and idealistic human paladin and crown prince of Lordaeron, Arthas Menethil, 
+                              as he becomes more and more corrupted. </p></span>
+                             </td>
+                           </tr>
+                           <tr>
+                            <td class="text-center p-2">
+                              <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal12"> See more </button>
+                              <div class="modal" id="myModal12">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                                      <h5 class="modal-title"> Install Now </h5>
+                                    </div>
+                                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                                      <img src="../images\wc3.jpg" width="100%" height="200vh">
+                                      <h1 style="font-size:120%; text-align: start;"> Warcraft III: Reign of Chaos </h1>
+                                      <h2 style="font-size: 110%; text-align: start; color: gray;"> EA Pacific </h2>
+                                      <h3 style="font-size: 100%; text-align: start; color: gray"> 
+                                       <i class="fa-solid fa-coins text-warning"> 5 </i>
+                                       <span class="fa fa-star text-warning ms-3"></span>
+                                       <span class="fa fa-star text-warning"></span>
+                                       <span class="fa fa-star text-warning"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span>
+                                     </h3>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="play" data-bs-dismiss="modal">Try for Free</button>
+                                      <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                                      <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button>   
+                                    </div>
+                                </div>
+                              </div>
+                            </td>
+                           </tr>
+                       </table>   
+                     </div>
+                </section>
 <section class="container">
-  <div class="d-md-flex justify-content-around col-12" style=" width: 100%;">
-                  <!------ Game 1 ------>
-    <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-       <table border="0">
-          <tr>
-            <td> <div class="d-flex p-2 justify-content-center">
-            <img src="../images/yugi.jpg" width="100%" height="200vh"> </div> </td>
-          </tr>
-          <tr>
-            <td><span><h1 style="font-size:120%; color: white"> Yu-Gi-Oh! - The Legend Reborn </h1> </span>
-            <span><p style="color: rgb(189, 179, 179);">Yu-Gi-Oh! - The Legend Reborn is a very complete trading card game, with an enormous amount of cards (more than a thousand) 
-              added to a single-player mode against a competent computer.</p></span>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-center p-2">
-              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal10"> Install </button>
-              <div class="modal" id="myModal10">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                      <h5 class="modal-title"> Install Now </h5>
-                    </div>
-                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                      <img src="../images/yugi.jpg" width="100%" height="200vh"> 
-                      <h1 style="font-size:120%; text-align: start;"> Yu-Gi-Oh! - The Legend Reborn </h1>
-                      <h2 style="font-size: 110%; text-align: start; color: gray;"> Konami inc. </h2>
-                      <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                        <i class="fa-solid fa-coins text-warning"> 15 </i>
-                        <span class="fa fa-star text-warning ms-3"></span>
-                        <span class="fa fa-star text-warning"></span>
-                        <span class="fa fa-star text-warning"></span>
-                        <span class="fa fa-star text-warning"></span>
-                        <span class="fa fa-star"></span>
-                      </h3>
-                    </div>
-                    <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                      <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/58zrhn7h" style="text-decoration: none; color: white">Install</a></button>
-                      <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-      </table>   
-    </div>
-             <!------ GAME 2 ------>
-      <div class="ms-5"></div>
-      <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-        <table border="0">
-           <tr>
-             <td> <div class="d-flex p-2 justify-content-center">
-             <img src="../images/CCG.jpg" width="100%" height="200vh"> </div> </td>
-           </tr>
-           <tr>
-             <td><span><h1 style="font-size:120%; color: white"> Command & Conquer : Generals  </h1> </span>
-             <span><p style="color: rgb(189, 179, 179);">Command & Conquer: Generals is a real-time strategy video game developed by EA Pacific and released in 2003. 
-              The game takes place in an entirely separate continuity.</p></span>
-             </td>
-           </tr>
-           <tr>
-            <td class="text-center p-2">
-              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal11"> Install </button>
-              <div class="modal" id="myModal11">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                      <h5 class="modal-title"> Install Now </h5>
-                    </div>
-                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                      <img src="../images/CCG.jpg" width="100%" height="200vh">
-                      <h1 style="font-size:120%; text-align: start;"> Command & Conquer : Generals  </h1>
-                      <h2 style="font-size: 110%; text-align: start; color: gray;"> EA Pacific </h2>
-                      <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                       <i class="fa-solid fa-coins text-warning"> 5 </i>
-                       <span class="fa fa-star text-warning ms-3"></span>
-                       <span class="fa fa-star text-warning"></span>
-                       <span class="fa fa-star text-warning"></span>
-                       <span class="fa fa-star text-warning"></span>
-                       <span class="fa fa-star"></span>
-                     </h3>
-                    </div>
-                    <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                      <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/ucpa2t3m" style="text-decoration: none; color: white">Install</a></button>
-                      <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-           </tr>
-       </table>   
-     </div>
-                       <!--------- GAME 3 --------->
-       <div class="ms-5"></div> 
-       <div class="shadow-lg  mb-5 rounded p-2 w-100" style="background-color:rgb(0, 0, 0); border: 1px solid red;">
-        <table border="0">
-           <tr>
-             <td> <div class="d-flex p-2 justify-content-center">
-             <img src="../images/wc3.jpg" width="100%" height="200vh"> </div> </td>
-           </tr>
-           <tr>
-             <td><span><h1 style="font-size:120%; color: white"> Warcraft III: Reign of Chaos </h1> </span>
-             <span><p style="color: rgb(189, 179, 179);">The game follows the story of three different heroes: The one of young and idealistic human paladin and crown prince of Lordaeron, Arthas Menethil, 
-              as he becomes more and more corrupted. </p></span>
-             </td>
-           </tr>
-           <tr>
-            <td class="text-center p-2">
-              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal12"> Install </button>
-              <div class="modal" id="myModal12">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                      <h5 class="modal-title"> Install Now </h5>
-                    </div>
-                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                      <img src="../images/wc3.jpg" width="100%" height="200vh">
-                      <h1 style="font-size:120%; text-align: start;"> Warcraft III: Reign of Chaos </h1>
-                      <h2 style="font-size: 110%; text-align: start; color: gray;"> EA Pacific </h2>
-                      <h3 style="font-size: 100%; text-align: start; color: gray"> 
-                       <i class="fa-solid fa-coins text-warning"> 5 </i>
-                       <span class="fa fa-star text-warning ms-3"></span>
-                       <span class="fa fa-star text-warning"></span>
-                       <span class="fa fa-star text-warning"></span>
-                       <span class="fa fa-star"></span>
-                       <span class="fa fa-star"></span>
-                     </h3>
-                    </div>
-                    <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                      <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/2p9b68rc" style="text-decoration: none; color: white">Install</a></button>
-                      <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-           </tr>
-       </table>   
-     </div>
-</section>
-<section class="container">
-<div class="text-center mb-3"> 
-    <button type="submit" class="btn btn-danger"><a href="#" style="text-decoration: none; color: white;"> Back on Top </a></button>
-    <button type="submit" class="btn btn-secondary" disabled><a href="#" style="text-decoration: none; color: white;"> See more</button>
+<div class="text-center pb-3"> 
+    <button type="submit" class="play"><a href="#" style="text-decoration: none; color: white;"> Back on Top </a></button>
+    <button type="submit" class="install" disabled><a href="#" style="text-decoration: none; color: white;"> See more</button>
 </div>
 </section>
 <div class="container-fluid">
   <footer class="py-3 mt">
     <ul class="nav justify-content-center pb-2 mb-2">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Discover</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Mobile</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Desktop</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Console</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+      <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-white">Discover</a></li>
+      <li class="nav-item"><a href="mobile.html" class="nav-link px-2 text-white">Mobile</a></li>
+      <li class="nav-item"><a href="pc.html" class="nav-link px-2 text-white">Desktop</a></li>
+      <li class="nav-item"><a href="console.html" class="nav-link px-2 text-white">Console</a></li>
     </ul>
     <hr class="w-50 mx-auto" style="color: white;">
     <p class="text-center text-white">&copy; 2022 5G GamePlay, Inc.</p>

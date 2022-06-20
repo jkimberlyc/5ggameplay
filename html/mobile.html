@@ -56,12 +56,124 @@
             >
               <div class="d-flex">
                 <!-- Cart -->
-                <a class="text-reset me-3 d-none d-md-block" href="#">
-                  <span><i class="fas fa-shopping-cart"></i></span>
-                  <span class="badge rounded-pill badge-notification bg-danger"
-                    >1</span
-                  >
+                <a
+                  class="text-reset me-3 d-none d-md-block"
+                  role="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="fas fa-shopping-cart"></i>
                 </a>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header text-dark">
+                    <div id="offcanvasRightLabel">
+                      <h4
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <span class="text-muted">Your cart</span>
+                        <span class="badge badge-secondary badge-pill text-end"
+                          >3</span
+                        >
+                      </h4>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="list-group mb-3">
+                      <li
+                        class="list-group-item d-flex justify-content-between lh-condensed"
+                      >
+                        <div>
+                          <h6 class="my-0">Minecraft : First Edition</h6>
+                          <small class="text-muted"></small>
+                        </div>
+                        <span class="text-muted">
+                          <i class="fa-solid fa-coins text-warning"></i>
+                          12</span
+                        >
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between lh-condensed"
+                      >
+                        <div>
+                          <h6 class="my-0">Cyberpunk 2077</h6>
+                          <small class="text-muted">On Sale</small>
+                        </div>
+                        <span class="text-muted"
+                          ><i class="fa-solid fa-coins text-warning"></i>
+                          999</span
+                        >
+                      </li>
+
+                      <li
+                        class="list-group-item d-flex justify-content-between bg-light"
+                      >
+                        <div class="text-success">
+                          <h6 class="my-0">Promo code</h6>
+                          <small>EXAMPLECODE</small>
+                        </div>
+                        <span class="text-success"
+                          >-
+                          <i class="fa-solid fa-coins text-warning"></i>
+                          15</span
+                        >
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between"
+                      >
+                        <span>Total (Kodecoin)</span>
+                        <strong
+                          ><i class="fa-solid fa-coins text-warning"></i>
+                          996</strong
+                        >
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between small"
+                      >
+                        <span>Current Kodecoins</span>
+                        <strong
+                          ><i class="fa-solid fa-coins text-warning"></i>
+                          100</strong
+                        >
+                      </li>
+                    </ul>
+                    <form class="card p-2 mb-4">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Promo code"
+                        />
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-secondary">
+                            Redeem
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <p class="small text-red text-end">
+                      Insufficient balance <br />
+
+                      <button class="install" disabled>
+                        Proceed to Checkout
+                      </button>
+                    </p>
+                  </div>
+                </div>
+
+                
 
                 <!-- User -->
                 <div class="dropdown d-none d-md-block">
@@ -157,6 +269,15 @@
                 <a class="nav-link" href="../html/console.html">Console</a>
               </li>
               <li class="nav-item me-2 d-block d-md-none">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  >Cart</a
+                >
+              </li>
+              <li class="nav-item me-2 d-block d-md-none">
                 <a class="nav-link" href="profile.html">Profile</a>
               </li>
             </ul>
@@ -168,7 +289,7 @@
 
     <!----- Action Games  ----->
     <section class="container">
-      <div class="text-white"><h2> Action </h2></div>
+      <div class="display-5 ls-3">Action</div>
       <br>
       <div class="d-sm-flex justify-content-around col-12" style=" width: 100%;">
                       <!------ Game 1 ------>
@@ -183,11 +304,9 @@
                 <span><p style="color: rgb(189, 179, 179);">Enjoy the iconic first-person shooter game all from the tips of your fingers. Suit up and join the battle! Mysterious clues leading soldiers to the enemy stronghold. Soldiers need to fight their way through the complex environment.</p></span>
                 </td>
               </tr>
-          </table>   
-              
-              <div class="text-center">
+              <tr>
                 <td class="text-center p-2">
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1"> Install </button>
+                  <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal1"> See more </button>
                   <div class="modal" id="myModal1">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -209,14 +328,15 @@
 
                         </div>
                         <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                          <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/58zrhn7h" style="text-decoration: none; color: white">Install</a></button>
-                          <button type="submit" class="btn btn-success"> Add to Wishlist </button>
+                          <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                          <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
                         </div>
                       </div>
                     </div>
                   </div>
                 </td>
-              </div>
+              </tr>
+          </table>   
         </div>
                  <!------ GAME 2 ------>
           <div class="ms-5"></div>
@@ -231,38 +351,38 @@
                  <span><p style="color: rgb(189, 179, 179);">Join your friends in Mobile Legends: Bang Bang, the brand new 5v5 MOBA showdown, and fight against real players! Choose your favorite heroes and build the perfect team with your comrades-in-arms. Smash and outplay your enemies.</p></span>
                  </td>
                </tr>
+               <tr>
+                <td class="text-center p-2">
+                  <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal2"> See more </button>
+                  <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                          <h5 class="modal-title"> Install Now </h5>
+                        </div>
+                        
+                        <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                         <img src="https://news.codashop.com/ph/wp-content/uploads/sites/5/2020/11/Mobile-Legends-Match-Making.jpg" width="100%" height="200vh">  
+                         <h1 style="font-size:120%; text-align: start;"> Mobile Legends: Bang Bang </h1>
+                          <h2 style="font-size:110%; text-align: start; color: gray;">Moonton<h/2>
+                           <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
+                             <span class="fa fa-star text-warning"></span>
+                             <span class="fa fa-star text-warning"></span>
+                             <span class="fa fa-star text-warning"></span>
+                             <span class="fa fa-star text-warning"></span>
+                             <span class="fa fa-star"></span>
+                           </h3>
+                        </div>
+                        <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
+                          <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                          <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+               </tr>
            </table>   
-               <div class="text-center">
-                 <td class="text-center p-2">
-                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2"> Install </button>
-                   <div class="modal" id="myModal2">
-                     <div class="modal-dialog">
-                       <div class="modal-content">
-                         <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                           <h5 class="modal-title"> Install Now </h5>
-                         </div>
-                         
-                         <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                          <img src="https://news.codashop.com/ph/wp-content/uploads/sites/5/2020/11/Mobile-Legends-Match-Making.jpg" width="100%" height="200vh">  
-                          <h1 style="font-size:120%; text-align: start;"> Mobile Legends: Bang Bang </h1>
-                           <h2 style="font-size:110%; text-align: start; color: gray;">Moonton<h/2>
-                            <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star"></span>
-                            </h3>
-                         </div>
-                         <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                           <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/ucpa2t3m" style="text-decoration: none; color: white">Install</a></button>
-                           <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </td>
-               </div>
          </div>
                            <!--------- GAME 3 --------->
            <div class="ms-5"></div> 
@@ -277,45 +397,45 @@
                  <span><p style="color: rgb(189, 179, 179);">Join your crewmates in a multiplayer game of teamwork and betrayal! Play with 4-15 players as you attempt to prep your spaceship for departure, but beware as one will be an impostor bent on killing everyone! </p></span>
                  </td>
                </tr>
+               <tr>
+                <td class="text-center p-2">
+                  <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal3"> See more </button>
+                  <div class="modal" id="myModal3">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                          <h5 class="modal-title"> Install Now </h5>
+                        </div>
+                        
+                        <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                         <img src="among us1.jpg" width="100%" height="200vh"> 
+                         <h1 style="font-size:120%; text-align: start;"> Among Us </h1>
+                          <h2 style="font-size:110%; text-align: start; color: gray;">Innersloth LLC<h/2>
+                           <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
+                             <span class="fa fa-star text-warning"></span>
+                             <span class="fa fa-star text-warning"></span>
+                             <span class="fa fa-star text-warning"></span>
+                             <span class="fa fa-star"></span>
+                             <span class="fa fa-star"></span>
+                           </h3>
+                          
+                        </div>
+                        <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
+                          <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                          <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+               </tr>
            </table>   
-               <div class="text-center">
-                 <td class="text-center p-2">
-                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal3"> Install </button>
-                   <div class="modal" id="myModal3">
-                     <div class="modal-dialog">
-                       <div class="modal-content">
-                         <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                           <h5 class="modal-title"> Install Now </h5>
-                         </div>
-                         
-                         <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                          <img src="among us1.jpg" width="100%" height="200vh"> 
-                          <h1 style="font-size:120%; text-align: start;"> Among Us </h1>
-                           <h2 style="font-size:110%; text-align: start; color: gray;">Innersloth LLC<h/2>
-                            <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                            </h3>
-                           
-                         </div>
-                         <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                           <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/2p9b68rc" style="text-decoration: none; color: white">Install</a></button>
-                           <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </td>
-               </div>
          </div>
   </section>
   
   <!--section 2-->
   <section class="container">
-    <div class="text-white"><h2> Adventure </h2></div>
+    <div class="display-5 ls-3">Adventure</div>
     <br>
     <div class="d-sm-flex justify-content-around col-12" style=" width: 100%;">
                     <!------ Game 1 ------>
@@ -330,10 +450,9 @@
               <span><p style="color: rgb(189, 179, 179);">Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine.</p></span>
               </td>
             </tr>
-        </table>   
-            <div class="text-center">
+            <tr>
               <td class="text-center p-2">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal4"> Install </button>
+                <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal4"> See more </button>
                 <div class="modal" id="myModal4">
                   <div class="modal-dialog">
                     <div class="modal-content">
@@ -354,14 +473,15 @@
                           </h3>
                       </div>
                       <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                        <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/58zrhn7h" style="text-decoration: none; color: white">Install</a></button>
-                        <button type="submit" class="btn btn-success"> Add to Wishlist </button>
+                        <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                        <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
                       </div>
                     </div>
                   </div>
                 </div>
               </td>
-            </div>
+            </tr>
+        </table>   
       </div>
                <!------ GAME 2 ------>
         <div class="ms-5"></div>
@@ -379,7 +499,7 @@
          </table>   
              <div class="text-center">
                <td class="text-center p-2">
-                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal5"> Install </button>
+                 <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal5"> See more </button>
                  <div class="modal" id="myModal5">
                    <div class="modal-dialog">
                      <div class="modal-content">
@@ -400,8 +520,8 @@
                           </h3>
                        </div>
                        <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                         <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/ucpa2t3m" style="text-decoration: none; color: white">Install</a></button>
-                         <button type="submit" class="btn btn-success"> Add to Wishlist </button>
+                        <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                        <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
                        </div>
                      </div>
                    </div>
@@ -422,44 +542,44 @@
                <span><p style="color: rgb(189, 179, 179);">Fly from vine to vine, but watch out for dangers lurking in the jungle. Earn bananas to get upgrades, specials and power ups. Download now and experience  the joy of flying along the vines through various environments!</p></span>
                </td>
              </tr>
+             <tr>
+              <td class="text-center p-2">
+                <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal6"> See more </button>
+                <div class="modal" id="myModal6">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                        <h5 class="modal-title"> Install Now </h5>
+                      </div>
+                      
+                      <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                       <img src="../images/benjie bananas1.jpg" width="100%" height="200vh"> 
+                       <h1 style="font-size:120%; text-align: start;"> Benji Bananas </h1>
+                        <h2 style="font-size:110%; text-align: start; color: gray;">Animoca Brands<h/2>
+                         <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
+                           <span class="fa fa-star text-warning"></span>
+                           <span class="fa fa-star text-warning"></span>
+                           <span class="fa fa-star"></span>
+                           <span class="fa fa-star"></span>
+                           <span class="fa fa-star"></span>
+                         </h3>
+                      </div>
+                      <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
+                        <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                        <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+             </tr>
          </table>   
-             <div class="text-center">
-               <td class="text-center p-2">
-                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal6"> Install </button>
-                 <div class="modal" id="myModal6">
-                   <div class="modal-dialog">
-                     <div class="modal-content">
-                       <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                         <h5 class="modal-title"> Install Now </h5>
-                       </div>
-                       
-                       <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                        <img src="../images/benjie bananas1.jpg" width="100%" height="200vh"> 
-                        <h1 style="font-size:120%; text-align: start;"> Benji Bananas </h1>
-                         <h2 style="font-size:110%; text-align: start; color: gray;">Animoca Brands<h/2>
-                          <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
-                            <span class="fa fa-star text-warning"></span>
-                            <span class="fa fa-star text-warning"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                          </h3>
-                       </div>
-                       <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                         <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/2p9b68rc" style="text-decoration: none; color: white">Install</a></button>
-                         <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </td>
-             </div>
        </div>
 </section>
 
 <!--Section 3-->
 <section class="container">
-  <div class="text-white"><h2> Strategy </h2></div>
+  <div class="display-5 ls-3">Strategy</div>
   <br>
   <div class="d-sm-flex justify-content-around col-12" style=" width: 100%;">
                   <!------ Game 1 ------>
@@ -474,10 +594,9 @@
             <span><p style="color: rgb(189, 179, 179);">Epic combat strategy game. Build your village, train your troops & go to battle! Join millions of players worldwide as you build your village, raise a clan, and compete in epic Clan Wars. Unique troops are waiting for you!.</p></span>
             </td>
           </tr>
-      </table>   
-          <div class="text-center">
+          <tr>
             <td class="text-center p-2">
-              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal7"> Install </button>
+              <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal7"> See more </button>
               <div class="modal" id="myModal7">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -498,14 +617,15 @@
                         </h3>
                     </div>
                     <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                      <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/58zrhn7h" style="text-decoration: none; color: white">Install</a></button>
-                      <button type="submit" class="btn btn-success"> Add to Wishlist </button>
+                      <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
                     </div>
                   </div>
                 </div>
               </div>
             </td>
-          </div>
+          </tr>
+      </table>   
     </div>
              <!------ GAME 2 ------>
       <div class="ms-5"></div>
@@ -520,38 +640,38 @@
              <span><p style="color: rgb(189, 179, 179);">Stem a zombie attack on your yard with the help of powerful plants! Get ready to soil your plants as a mob of fun-loving zombies is about to invade your home. Use your arsenal of 49 zombie-zapping plants-peashooters, wall-nuts, cherry bombs and more.</p></span>
              </td>
            </tr>
+           <tr>
+            <td class="text-center p-2">
+              <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal8"> See more </button>
+              <div class="modal" id="myModal8">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                      <h5 class="modal-title"> Install Now </h5>
+                    </div>
+                    
+                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                     <img src="../images/pvz.jpg" width="100%" height="200vh"> 
+                     <h1 style="font-size:120%; text-align: start;"> Plants vs. Zombies™  </h1>
+                      <h2 style="font-size:110%; text-align: start; color: gray;">ELECTRONIC ARTS<h/2>
+                       <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
+                         <span class="fa fa-star text-warning"></span>
+                         <span class="fa fa-star text-warning"></span>
+                         <span class="fa fa-star text-warning"></span>
+                         <span class="fa fa-star text-warning"></span>
+                         <span class="fa fa-star"></span>
+                       </h3>
+                    </div>
+                    <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
+                      <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+           </tr>
        </table>   
-           <div class="text-center">
-             <td class="text-center p-2">
-               <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal8"> Install </button>
-               <div class="modal" id="myModal8">
-                 <div class="modal-dialog">
-                   <div class="modal-content">
-                     <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                       <h5 class="modal-title"> Install Now </h5>
-                     </div>
-                     
-                     <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                      <img src="../images/pvz.jpg" width="100%" height="200vh"> 
-                      <h1 style="font-size:120%; text-align: start;"> Plants vs. Zombies™  </h1>
-                       <h2 style="font-size:110%; text-align: start; color: gray;">ELECTRONIC ARTS<h/2>
-                        <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star"></span>
-                        </h3>
-                     </div>
-                     <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                       <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/ucpa2t3m" style="text-decoration: none; color: white">Install</a></button>
-                       <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </td>
-           </div>
      </div>
                        <!--------- GAME 3 --------->
        <div class="ms-5"></div> 
@@ -566,46 +686,46 @@
              <span><p style="color: rgb(189, 179, 179);">The true emperor has fallen. We need a real hero, a true lord who can unite the kingdoms. Recruit heroes from various backgrounds, from dwarves and mermaids to dark elves and steampunk robots, and assemble your army in this magical world!</p></span>
              </td>
            </tr>
+           <tr>
+            <td class="text-center p-2">
+              <button type="button" class="play" data-bs-toggle="modal" data-bs-target="#myModal9"> See more </button>
+              <div class="modal" id="myModal9">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
+                      <h5 class="modal-title"> Install Now </h5>
+                    </div>
+                    
+                    <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
+                     <img src="../images/lords mobile1.jpg" width="100%" height="200vh"> 
+                     <h1 style="font-size:120%; text-align: start;"> Lords Mobile: Tower Defense </h1>
+                      <h2 style="font-size:110%; text-align: start; color: gray;">IGG.COM<h/2>
+                       <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
+                         <span class="fa fa-star text-warning"></span>
+                         <span class="fa fa-star text-warning"></span>
+                         <span class="fa fa-star text-warning"></span>
+                         <span class="fa fa-star"></span>
+                         <span class="fa fa-star"></span>
+                       </h3>
+                    </div>
+                    <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
+                      <button type="button" class="install" data-bs-dismiss="modal">Add to Cart</button>
+                            <button type="submit" class="install" data-bs-dismiss="modal"> Add to Wishlist </button> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+           </tr>
        </table>   
-           <div class="text-center">
-             <td class="text-center p-2">
-               <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal9"> Install </button>
-               <div class="modal" id="myModal9">
-                 <div class="modal-dialog">
-                   <div class="modal-content">
-                     <div class="modal-header" style="background-color: rgb(14, 2, 83); color: white;">
-                       <h5 class="modal-title"> Install Now </h5>
-                     </div>
-                     
-                     <div class="modal-body" style="background-color: rgb(14, 2, 83); color: white;">
-                      <img src="../images/lords mobile1.jpg" width="100%" height="200vh"> 
-                      <h1 style="font-size:120%; text-align: start;"> Lords Mobile: Tower Defense </h1>
-                       <h2 style="font-size:110%; text-align: start; color: gray;">IGG.COM<h/2>
-                        <h3 style="font-size:100%; text-align: start; color:gray">Free to Play
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star text-warning"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        </h3>
-                     </div>
-                     <div class="modal-footer" style="background-color: rgb(14, 2, 83); color: white;">
-                       <button type="submit" class="btn btn-primary"><a href="https://tinyurl.com/2p9b68rc" style="text-decoration: none; color: white">Install</a></button>
-                       <button type="submit" class="btn btn-success"> Add to Wishlist </button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </td>
-           </div>
      </div>
 </section>
 
 <!--Section 4-->
 <section class="container">
-  <div class="text-center mb-3"> 
-      <button type="submit" class="btn btn-danger"><a href="#" style="text-decoration: none; color: white;"> Back on Top </a></button>
-      <button type="submit" class="btn btn-secondary" disabled><a href="#" style="text-decoration: none; color: white;"> See more</button>
+  <div class="text-center p-3"> 
+      <button type="submit" class="play"><a href="#" style="text-decoration: none; color: white;"> Back on Top </a></button>
+      <button type="submit" class="install" disabled><a href="#" style="text-decoration: none; color: white;"> See more   </button>
   </div>
   </section>
 
@@ -613,11 +733,10 @@
   <div class="container-fluid">
     <footer class="py-3 mt">
       <ul class="nav justify-content-center pb-2 mb-2">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Discover</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Mobile</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Desktop</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Console</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-white">Discover</a></li>
+        <li class="nav-item"><a href="mobile.html" class="nav-link px-2 text-white">Mobile</a></li>
+        <li class="nav-item"><a href="pc.html" class="nav-link px-2 text-white">Desktop</a></li>
+        <li class="nav-item"><a href="console.html" class="nav-link px-2 text-white">Console</a></li>
       </ul>
       <hr class="w-50 mx-auto" style="color: white;">
       <p class="text-center text-white">&copy; 2022 5G GamePlay, Inc.</p>
