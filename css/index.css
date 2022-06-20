@@ -175,3 +175,22 @@ footer {
   color: rgb(230, 255, 173);
   box-shadow: 3px 3px var(--navy);
 }
+
+.play {
+  background: #f00000;
+  background: -webkit-linear-gradient(to right, #dc271ed7, #b90909ac);
+  background: linear-gradient(to right, #dc271ed7, #b90909ac);
+  color: white;
+  text-shadow: 2px 2px navy;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 2px solid var(--navy);
+  border-radius: 3px;
+  transition: 0.1s ease;
+  font-weight: 600;
+}
+
+.play:hover {
+  color: rgb(230, 255, 173);
+  box-shadow: 3px 3px var(--navy);
+}
